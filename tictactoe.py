@@ -8,8 +8,7 @@ def display(arr):
         print(res)
         print(bottom)
 
-#Loop While All Items are not full
-#changes
+
 l=0
 k="O"
 arr = [["-","-","-"],["-","-","-"],["-","-","-"]]
