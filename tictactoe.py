@@ -9,6 +9,8 @@ def display(arr):
         print(bottom)
 
 #Loop While All Items are not full
+
+#Check for Changes Hello
 l=0
 k="O"
 arr = [["-","-","-"],["-","-","-"],["-","-","-"]]
