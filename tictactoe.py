@@ -8,16 +8,12 @@ def display(arr):
         print(res)
         print(bottom)
 
-
-
-
-
 #Loop While All Items are not full
 l=0
 k="O"
 arr = [["-","-","-"],["-","-","-"],["-","-","-"]]
+display(arr)
 while(l < 3):
-    display(arr)
     x = int(input("Please input the X Value of your attack:"))
     y = int(input("Please input the Y Value of your attack:"))
     arr[x][y] = k
