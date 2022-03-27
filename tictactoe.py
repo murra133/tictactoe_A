@@ -1,15 +1,17 @@
 
 from ast import Yield
 
-from numpy import matrix
-
 
 
 def display(arr):
     print('\n')
+    bottom = "   ------------"
+    l=0
+    print('   x0| x1 | x2')
+    print(bottom)
     for x in arr:
-        res = x[0]+"|"+x[1]+"|"+x[2]+"\n"
-        bottom = "______\n"
+        res = "y"+str(l)+" "+x[0]+" | "+x[1]+"  |  "+x[2]
+        l=l+1
         print(res)
         print(bottom)
 
@@ -163,8 +165,8 @@ def game():
         else:
             player = str(2)
         print("Player "+player+" it is now your turn\n")
-        x = int(input("Please input the X Value of your attack: "))
-        y = int(input("Please input the Y Value of your attack: "))
+        y = int(input("Please input the X Value of your attack: "))
+        x = int(input("Please input the Y Value of your attack: "))
         
         # Abdullahi - Check if Input is Valid (Need to check if there is not already a value there or if input is not within a matrix) 
         
@@ -194,6 +196,10 @@ def game():
         print("It's a Draw")
     #Check if Players want to play again
     play_again = input("Want to Play Again Y/N: ")
+    while(play_again!="Y" and play_again!="N"):
+        print("Invalid Input")
+        play_again = input("Want to Play Again Y/N: ")
+
     return play_again    
     
 if __name__ == '__main__':
